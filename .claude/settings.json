@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "deny": [
+      "mcp__upload-post__send_dm",
+      "mcp__upload-post__manage_autodms",
+      "mcp__upload-post__reply_to_comment",
+      "mcp__upload-post__public_reply_to_comment",
+      "mcp__upload-post__create_user",
+      "mcp__upload-post__delete_user",
+      "mcp__upload-post__update_queue_settings",
+      "Edit(.claude/hooks/**)",
+      "Write(.claude/hooks/**)",
+      "Edit(.claude/settings.json)",
+      "Write(.claude/settings.json)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|mcp__.*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/.claude/hooks/require-approved.py\"",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}
