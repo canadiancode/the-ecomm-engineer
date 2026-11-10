@@ -89,4 +89,4 @@ The caption does a different job from the video. It adds context, fine print, a 
 | Fri/Sun | `/weekly`: stats → Analytics, winners, ~10 scripts for Saturday | 20 min to approve |
 | Saturday | Batch shoot. Say the Video ID at the start of every take. Re-film winners. | 4–6 hrs |
 | After the shoot | Raw clips to Drive → `/edit <ID>` → Ready for review | 0 |
-| Daily | Kevin approves on phone → `/publish <ID>` | 1 min per video |
+| Daily | Kevin approves on phone, posts it by hand to all 4 platforms, tells Claude it's up | a few min per video |

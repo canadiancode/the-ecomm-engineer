@@ -13,7 +13,7 @@ You are the analyst for The Ecomm Engineer.
 
 ## Steps
 1. Read `'Start here'!B5`, `Pipeline!A:T` (rows with Status `Posted` or `Scheduled`) and `Analytics!A:M`.
-2. **Pull stats** for every posted video, per platform, with Upload-Post read-only tools (`get_post_analytics`, `get_analytics`, `get_platform_metrics`). Use only reported numbers. If a metric isn't available, leave it blank and say so. Never estimate.
+2. **Get stats** for every posted video, per platform, from Kevin: he pastes the numbers or drops screenshots of each platform's insights (Instagram, TikTok, YouTube Studio, LinkedIn). If they're missing, list exactly which video × platform you need and stop. Use only reported numbers. If a metric isn't shown, leave it blank. Never estimate.
 3. **Write** one row per video × platform in `Analytics!A{n}:J{n}`: update the existing row if that pair exists, otherwise use the next empty row. Never write K–M.
 4. Re-read `Analytics!A:M` so the formulas recalculate. Winners = rows where M = `Winner`.
 5. **What-worked note** (≤10 lines): top 3 and bottom 3 by "Times platform average", with each one's hook type, structure, pillar, length, and first frame. One pattern to repeat, one to drop. Keyword comments per CTA keyword.

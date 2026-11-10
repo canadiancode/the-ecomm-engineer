@@ -51,7 +51,7 @@ Tools: `mcp__Google_Sheets__get_values`, `update_values`, `append_values`.
 | P | Notes | agent | why it worked, outlier math, source context |
 
 **Ideas status:** blank = not reviewed · `Try` = pushed to Pipeline · `Posted` = our version is live · `Reject` = not a fit.
-Agents never set Try or Reject. The publisher sets Posted. A Try idea is "pending" if no Pipeline row has its ID in column B.
+Agents never set Try or Reject. Posted is set when Kevin says he posted our version. A Try idea is "pending" if no Pipeline row has its ID in column B.
 
 ## Pipeline (20 columns, A–T)
 
@@ -83,7 +83,7 @@ No formula columns. Still write explicit ranges (`Pipeline!A{n}:T{n}` for a new 
 **Pipeline status flow:**
 
 ```
-Scripted → Approved to film → Filmed → Ready for review → Approved → Scheduled → Posted
+Scripted → Approved to film → Filmed → Ready for review → Approved → (Scheduled) → Posted
                          (Killed from any stage)
 ```
 
@@ -93,9 +93,9 @@ Scripted → Approved to film → Filmed → Ready for review → Approved → S
 | Approved to film | **Kevin** | Kevin films |
 | Filmed | Kevin (or editor, once raw clips are in Drive) | `/edit` |
 | Ready for review | editor | Kevin watches |
-| Approved | **Kevin only** | `/publish` (hook-enforced) |
-| Scheduled | publisher | Upload-Post queued it |
-| Posted | publisher | analyst tracks it |
+| Approved | **Kevin only** | Kevin posts by hand |
+| Scheduled | Kevin (optional) | he queued it in a platform's own scheduler |
+| Posted | any agent, when Kevin says he posted it | analyst tracks it |
 | Killed | Kevin | none |
 
 Agents never set `Approved to film`, `Approved` or `Killed`. Never skip a status. Never move a row backwards without writing why in Notes.

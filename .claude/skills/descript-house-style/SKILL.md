@@ -62,4 +62,4 @@ Do not export or publish. Reply with: final duration, any scripted line you coul
 1. `mcp__Descript__publish_project` (1080p, `access_level: "unlisted"`) → `share_url` + `download_url`.
 2. Save the render to Drive `Ready for Review` (`1AlVpG0Laa0xmFjtrVRzmtVOSRP-yvz8t`) as `V###_final.mp4`. If the file is too big to pass through the Drive connector, add it to the manual steps instead. Never skip silently.
 3. Pipeline: Q `Edited video` = share URL; N `Status` = `Ready for review`; T `Notes` append: Descript project URL, duration, lines missing from the footage, manual steps left for Kevin.
-4. Share/download links expire in 24h. The Drive copy (or re-running `publish_project`, which refreshes the same share URL) is the source of truth for publishing.
+4. Share/download links expire in 24h. The Drive copy (or re-running `publish_project`, which refreshes the same share URL) is what Kevin downloads to post.

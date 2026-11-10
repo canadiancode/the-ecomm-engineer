@@ -2,7 +2,7 @@
 
 Nov 7, 2026 · @Kevin Heidema
 
-> Source document, saved verbatim. The split files in `brand/` are the working copies agents read. If this file and the setup rules in `CLAUDE.md` conflict, `CLAUDE.md` wins.
+> Source document, saved verbatim. The split files in `brand/` are the working copies agents read. If this file and the setup rules in `CLAUDE.md` conflict, `CLAUDE.md` wins. Since 2026-11-10, Kevin posts by hand and the posting tool below is not used.
 
 ## Brand Profile
 
